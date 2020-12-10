@@ -1,0 +1,63 @@
+;comment
+; comment
+;;multi line
+comment;;
+
+say["hello world"]             Says hello world
+
+>variable[1 + 1]               Define the variable to be 1 + 1
+variable                       Call the variable
+
+>listvariable[1,2,3,4,5]       List variable
+removedup[]                    Remove duplicates in a list variable
+removedup[][]                  Remove duplicates of a specific type in a list variable
+random[listvariable]           Picks randomly from the list variable
+
+>function[][return 1 + 1]      The function returns 1 + 1
+
+function[]                     Call the function
+
+import                         Import a module
+import yekc                    Import the yekc module
+import roll                    Import the roll module
+
+num()                          Number
+str()                          String
+com()                          Command
+bool()                         Bool
+float()                        Float (number with decimal)
+upper()                        Uppercase
+lower()                        Lowercase
+len()                          Length
+
+exec[filename]                 Execute a file
+
+say["hello %"]%["world"]       Says hello world (% is a placeholder)
+
+random[1:10]                   Random number 1 through 10
+random[a][b][c]                Picks between a b and c
+
+if 1 == 1 [variable = 1] elif 1 == 2 [variable = 2] else [variable = 0]
+
+test[][]                       Tests for errors, first brackets are what to do when none, other ones are what to do when errors
+test[
+saye{"helno wrlod')            Tests a specific segment for errors            
+][][]
+test()[][]                     Tests a specific file for errors
+
+1^2                            One to the power of 2
+sqrt2                          Square root of 2
+
+say["hello world"
+"hello world"                  Multi line print
+"hello world"]
+
+replace[][]                    Replace the character in the first brackets with the character in the second brackets
+trim[]                         Trim whatever is in the brackets
+
+pause[]                        Wait specified amount of time (1ms, 1s, 1m, 1h, 1d)
+stop                           Stop
+stop[]                         Stop a specific file
+
+>function[inf][]               This function can take any amount of arguments
+>function[inf][:inf + :]       This function can take any amount of arguments and repeats argument + argument + argument etc
