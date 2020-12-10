@@ -1,2 +1,2 @@
 # Bocian
-Directly import YEK/yekc and roll
+Directly import YEK/yekc and roll.
